@@ -21,4 +21,9 @@ public class RestServiceImpl implements RestService
 		}		
 		return Response.ok(employeeDao.getEmployeeDetails(employeeId)).build();
 	}
+	
+	@Override
+	public Response getFragment(String type) {
+		return Response.ok(employeeDao.getFragment(type)).build();
+	}
 }
