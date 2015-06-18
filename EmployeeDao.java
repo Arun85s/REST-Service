@@ -16,4 +16,14 @@ public class EmployeeDao
 		emp.setLastName("Taylor");
 		return emp;
 	}
+	
+	public String getFragment(String type)
+	{
+		StringBuffer buffer = new StringBuffer();
+		buffer.append("<input type=").append("password\"");
+		buffer.append("size=\"20\"").append("value=\"\"");
+		buffer.append("/>");
+		return buffer.toString();
+	}
+
 }
