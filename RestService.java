@@ -24,4 +24,9 @@ public interface RestService
 	@Path("/getemployeedetail")
 	public Response getEmployeeDetail(@QueryParam("employeeId") String employeeId);
 	
+	@GET
+	@Produces({MediaType.TEXT_HTML,MediaType.APPLICATION_JSON})
+	@Path("/getfragment")
+	public Response getFragment(@QueryParam("type") String type);
+	
 }
